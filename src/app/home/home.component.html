@@ -1,0 +1,23 @@
+<div class="home">
+  <h1 class="title">Properties for sale</h1>
+
+  <div>
+    <md-card class="card" *ngFor="let property of this.appState.get('properties')">
+      <md-card-header>
+      <md-card-title>{{property.price | currency:'USD':true}}</md-card-title>
+      <md-card-subtitle>
+        <md-icon class="icon" *ngIf="property.bedrooms" svgIcon="bed"></md-icon> {{property.bedrooms}}
+        <md-icon class="icon" *ngIf="property.bathrooms" svgIcon="bathtub"></md-icon> {{property.bathrooms}}
+        <md-icon *ngIf="property.cars">directions_car</md-icon> {{property.cars}}
+      </md-card-subtitle>
+      </md-card-header>
+      <img md-card-image [src]="property.image">
+      <md-card-content>
+        <p>{{property.address}}</p>
+        <p>{{property.description}}</p>
+      </md-card-content>
+    </md-card>
+
+    <a md-fab routerLink="/property"><md-icon>add</md-icon></a>
+  </div>
+</div>

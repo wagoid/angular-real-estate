@@ -1,0 +1,17 @@
+.form {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px 20px 100px;
+  position: relative;
+  text-align: center;
+
+  .mat-input-container {
+    width: 100%;
+  }
+
+  .fab {
+    position: absolute;
+  }
+}
+
+

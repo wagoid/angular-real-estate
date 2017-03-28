@@ -1,0 +1,24 @@
+<form class="form mat-elevation-z3">
+  <h2>Add new Property</h2>
+  <md-input-container>
+    <input mdInput name="address" placeholder="Address" [(ngModel)]="property.address"/>
+  </md-input-container>
+  <md-input-container>
+    <input mdInput name="price" placeholder="Price" [(ngModel)]="property.price"/>
+  </md-input-container>
+  <md-input-container>
+    <textarea mdInput name="description" placeholder="Description" [(ngModel)]="property.description"></textarea>
+  </md-input-container>
+  <md-input-container>
+    <input mdInput name="bedrooms" type="number" placeholder="Bedrooms" [(ngModel)]="property.bedrooms"/>
+  </md-input-container>
+  <md-input-container>
+    <input mdInput name="bathrooms" type="number" placeholder="Bathrooms" [(ngModel)]="property.bathrooms"/>
+  </md-input-container>
+  <md-input-container>
+    <input mdInput name="cars" type="number" placeholder="Garage Spaces" [(ngModel)]="property.cars"/>
+  </md-input-container>
+  <button class="fab" md-fab color="accent" type="submit" title="Save" (click)="submitProperty()">
+    <md-icon>save</md-icon>
+  </button>
+</form>

@@ -1,0 +1,30 @@
+.home {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 5px;
+}
+
+.title {
+  text-align: center;
+}
+
+.card {
+  margin: 10px auto;
+
+  .mat-card-header {
+    height: auto;
+    margin-bottom: 25px;
+    min-height: 40px;
+  }
+
+  .mat-card-title {
+    color: rgb(255, 64, 129);
+    font-size: larger;
+  }
+
+  .icon {
+    color: black;
+    fill: black;
+    margin-right: 8px;
+  }
+}
